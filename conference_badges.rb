@@ -4,8 +4,6 @@ def badge_maker(name)
   return "Hello, my name is #{name}." 
 end
 
-def batch_badge_creator(n)
-  arr = attendees
-  attendees.each { |n| arr.push(badge_maker(n)) }
-  arr
+def batch_badge_creator
+  attendees.collect { |n| badge_maker(n)}
 end
