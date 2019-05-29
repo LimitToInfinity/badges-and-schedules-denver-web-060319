@@ -9,7 +9,3 @@ end
 def assign_rooms(array)
   attendees.collect { |n| "Hello, #{n}! You'll be assigned to room #{array.index(n).to_i + 1}!" }
 end
-
-def printer(attendees)
-  puts batch_badge_creator + assign_rooms
-end
