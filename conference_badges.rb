@@ -6,6 +6,6 @@ def batch_badge_creator(attendees)
   attendees.collect { |n| badge_maker(n)}
 end
 
-def assign_rooms(array)
+def assign_rooms(attendees)
   attendees.collect { |n| "Hello, #{n}! You'll be assigned to room #{attendees.index(n).to_i + 1}!" }
 end
