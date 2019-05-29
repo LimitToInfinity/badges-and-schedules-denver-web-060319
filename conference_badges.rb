@@ -6,6 +6,6 @@ end
 
 def batch_badge_creator(n)
   arr = attendees
-  array.each { |n| arr.push(badge_maker(n)) }
+  attendees.each { |n| arr.push(badge_maker(n)) }
   arr
 end
