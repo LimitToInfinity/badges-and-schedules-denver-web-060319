@@ -11,6 +11,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  attendees.map! { |n| puts batch_badge_creator(n) }
-  attendees.map! { |n| puts assign_rooms(n) }
+  attendees.map! { |n| batch_badge_creator(n) }
+  attendees.map! { |n| assign_rooms(n) }
 end
