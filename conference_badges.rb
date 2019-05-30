@@ -11,6 +11,6 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  attendees.each { |n| batch_badge_creator(n) }
-  puts assign_rooms(attendees.fetch(0..(attendees.length.to_i)))
+  attendees.each { |n| puts batch_badge_creator(n) }
+  attendees.each { |n| puts assign_rooms(n) }
 end
